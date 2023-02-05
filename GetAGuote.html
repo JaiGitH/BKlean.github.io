@@ -1,0 +1,56 @@
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/getquote.js"></script>
+
+<body class="getAQuoteBgImg">
+    <div class="container" style="display: flex;justify-content: center;">
+        <!-- <h1>Share Your Details</h1> -->
+        <form onsubmit="sendResponse(); reset(); return false">
+            <div class="form-group">
+                <label><b style="font-size: 30px;">Share Your Details</b></label>
+                <div class="fontuser">
+                    <label><b>Username</b></label>
+                    <input type="text" id="Cust_Name" placeholder="Enter Your Full Name" name="uname" required>
+                    <i class="fa fa-user fa-lg"></i>
+                </div>
+
+
+                <div class="fontuser">
+                    <label><b>Email Id</b></label>
+                    <input type="email" id="Cust_Email" placeholder="Enter Your Email" name="email" required>
+                    <i class="fa fa-envelope"></i>
+                </div>
+                <!-- <div class="form-row">
+                <div class="col">
+                    <input type="text" id="Cust_Name" class="form-control" placeholder="Full Name" required>
+                </div>
+                <div class="col">
+                    <input type="email" id="Cust_Email" class="form-control" placeholder="Email Address" required>
+                </div>
+                <div class="col">
+                    <input type="text" id="AnyDescript" class="form-control" placeholder="message">
+                </div>
+                 <textarea placeholder="Your Message" id="AnyDescript" class="form-control" name="message" rows="10"
+                    required></textarea> -->
+            </div>
+            <div class="form-group">
+                <div class="fontuser">
+                    <label><b>Mobile</b></label>
+                    <input type="tel" id="Cust_Mobile" name="phone"
+                        placeholder="Enter Your Mobile Number e.g.0123456789" pattern="[0-9]{10}" required>
+                    <!-- <input type="number" id="Cust_Mobile" placeholder="Enter Your Mobile Number" name="mobile" required> -->
+                    <i class="fa fa-phone-square"></i>
+                </div>
+
+                <label><b>Description</b></label>
+                <textarea type="text" id="AnyDescript" placeholder="Enter Your Email" name="desc" rows="10">
+           </textarea>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+            </div>
+    </div>
+    </form>
+    </div>
+</body>
