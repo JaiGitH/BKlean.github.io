@@ -357,7 +357,7 @@ img.padding_right_10 {
 .banner_text {
     width: 100%;
     float: left;
-    font-size: 16px;
+    font-size: 24px;
     color: #ffffff;
     margin: 0px;
 }
@@ -468,7 +468,7 @@ img.padding_right_10 {
 
 .services_taital {
     width: 100%;
-    font-size: 30px;
+    font-size: 40px;
     color: #252525;
     text-align: center;
     font-weight: bold;
@@ -479,7 +479,7 @@ img.padding_right_10 {
     position: absolute;
     width: 85px;
     height: 10px;
-    background-color: #000;
+    /* background-color: #000; */
     left: 0px;
     right: 0px;
     margin: 0 auto;
@@ -538,6 +538,15 @@ img.padding_right_10 {
 .image_1 {
     width: 100%;
     float: left;
+}
+
+.image_2 {
+    width: 100%;
+}
+
+.image_3 {
+    width: 100%;
+    float: right;
 }
 
 .padding_right_0 {
@@ -1027,7 +1036,7 @@ input.Enter_text::placeholder {
 
 .linkedinBtn:before {
     font-family: "FontAwesome";
-    content: "\f0e1";
+    /* content: "\f0e1"; */
     /* add linkedin icon */
 }
 
@@ -1133,3 +1142,62 @@ input.Enter_text::placeholder {
     box-shadow: none;
     transition: 0.3s ease-in-out;
 } */
+input[type=text], input[type=email], textarea[type=text], input[type=tel],
+input[type=password] {
+    width: 100%;
+    padding: 12px 40px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for the buttons*/
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Set a hover effect for the button*/
+button:hover {
+    opacity: 0.8;
+}
+
+/* Set extra style for the cancel button*/
+.container {
+    padding: 16px;
+}
+
+.fontuser {
+    position: relative;
+}
+
+.fontuser i {
+    position: absolute;
+    left: 15px;
+    top: 46px;
+    color: gray;
+}
+
+.fontpassword {
+    position: relative;
+}
+
+.fontpassword i {
+    position: absolute;
+    left: 15px;
+    top: 40px;
+    color: gray;
+}
+
+.getAQuoteBgImg {
+    width: 100%;
+    background-image: url(../images/CarCleaningBig.png);
+    height: auto;
+    background-repeat: no-repeat;
+}
